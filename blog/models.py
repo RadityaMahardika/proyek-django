@@ -1,9 +1,15 @@
+<<<<<<< HEAD
 from django.conf import settings
+=======
+>>>>>>> 3aa8ab6 (penambahan fitur Django admin)
 from django.db import models
 from django.utils import timezone
 
 class Post(models.Model):
+<<<<<<< HEAD
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+=======
+>>>>>>> 3aa8ab6 (penambahan fitur Django admin)
     title = models.CharField(max_length=200)
     text = models.TextField()
     created_date = models.DateTimeField(default=timezone.now)
@@ -14,4 +20,8 @@ class Post(models.Model):
         self.save()
 
     def __str__(self):
+<<<<<<< HEAD
         return self.title
+=======
+        return self.title
+>>>>>>> 3aa8ab6 (penambahan fitur Django admin)
